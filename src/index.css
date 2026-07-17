@@ -20,3 +20,6 @@ body {
 }
 
 
+section.product-cards .section-title h4{
+    font-size: clamp(2rem, 2vw, 4rem);
+}

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function MainHeroSection({ title, description, buttonText, image }) {
   return (
-    <section className="main_hero_section pt-16 lg:pt-20">
+    <section className="main_hero_section pt-16 lg:pt-20 mb-30">
       <div
         className="main_hero_inner relative min-h-[90vh] flex flex-col items-start justify-end py-20 after:content-['']
 after:absolute

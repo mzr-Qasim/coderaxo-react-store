@@ -26,27 +26,27 @@ export function ProductCard(props) {
               </small>
             </div>
           )}
-         <ul className="product-actions-inner flex flex-col absolute top-1/2 left-[10%] -translate-x-1/2 -translate-y-1/2 z-[20] w-full  -translate-x-full group-hover/product:translate-x-0  duration-500">
-            <li className="mb-2">
-              <button className="rounded-full w-10 h-10 bg-black text-white group/button hover:bg-white">
-                <i className="icon-favourite group-hover/button:text-black"></i>
-              </button>
-            </li>
-
-            <li className="mb-2">
-              <button
-                data-bs-toggle="offcanvas"
-                data-bs-target="#genieBot"
-                aria-controls="genieBot"
-                className="rounded-full w-10 h-10 bg-black text-white"
-              >
-                <i className="icon-quick-view"></i>
+         <ul className="product-actions flex flex-col gap-5 absolute top-1/2 left-0 -translate-y-1/2 z-[20] w-full  -translate-x-full group-hover/product:translate-x-0  transition-all duration-500 ease-in-out p-5">
+            <li >
+              <button className="rounded-full w-10 h-10 bg-black text-white group/button1 hover:bg-white">
+                <i className="icon-favourite group-hover/button1:text-black"></i>
               </button>
             </li>
 
             <li>
-              <button className="rounded-full w-10 h-10 bg-black text-white">
-                <i className="icon-quick-shop "></i>
+              <button
+                data-bs-toggle="offcanvas"
+                data-bs-target="#genieBot"
+                aria-controls="genieBot"
+                className="rounded-full w-10 h-10 bg-black text-white group/button2 hover:bg-white"
+              >
+                <i className="icon-quick-view group-hover/button2:text-black"></i>
+              </button>
+            </li>
+
+            <li>
+              <button className="rounded-full w-10 h-10 bg-black text-white group/button3 hover:bg-white">
+                <i className="icon-quick-shop  group-hover/button3:text-black"></i>
               </button>
             </li>
           </ul>
@@ -56,7 +56,7 @@ export function ProductCard(props) {
 
         <div className="product-details pt-3">
           <Link
-            className="product-title"
+            className="product-title text-[1.2rem] font-bold "
             to={`/products/${props.product.id}`}
           >
             {props.product.title}

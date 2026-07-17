@@ -19,11 +19,10 @@ function Home() {
         image={main_hero}
       
       />
-      <section className="product-cards">
+      <section className="product-cards mb-30">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                  <div className="section-title">
-          <h4>Recommended For You</h4>
-          <p>We picked some items just for you</p>
+                  <div className="section-title text-center">
+          <h4 className="text-black pb-5 font-bold">Recommended For You <span className="pt-3 pb-5 block text-[60%] font-light">We picked some items just for you</span></h4>
         </div>
           <div className="grid grid-cols-12 gap-6">
             {
