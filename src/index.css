@@ -1,1 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import "tailwindcss";
+@import "./styles/icomoon.css";
+
+
+
+body { 
+    overflow: hidden;
+    overflow-y: auto;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+
+}
+
+.main-hero-content h1{
+    font-size: clamp(3rem, 4vw, 8rem);
+
+}
+
+
